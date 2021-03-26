@@ -53,8 +53,8 @@ ssh -T git@gitee.com
 git config user.name "user_name"
 git config user.email "user_email"
 
-git config user.name "topazus"
-git config user.email "topazus@outlook.com"
+git config --global user.name "topazus"
+git config --global user.email "topazus@outlook.com"
 ```
 
 添加coding的SSH
