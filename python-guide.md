@@ -25,6 +25,10 @@ rm -rf ~/miniconda
 rm -rf ~/.condarc ~/.conda ~/.continuum
 ```
 
+If you use the default official mirrors and the speed looks good, it is not recommended to use BFSU mirror in Windows 10.
+
+Windows 用户无法直接创建名为 .condarc 的文件，可先执行 `conda config --set show_channel_urls yes` 生成该文件之后再修改。
+
 set BFSU conda mirror
 
 ```
