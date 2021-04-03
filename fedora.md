@@ -1,27 +1,3 @@
-1、下载 Clash 客户端。
-执行 cd && mkdir clash 在用户目录下创建 clash 文件夹。
-
-下载适合的 Clash 二进制文件并解压重命名为 clash
-
-一般个人的64位电脑下载 clash-linux-amd64.tar.gz 即可。
-2、下载 Clash 配置文件。
-在终端 cd 到 Clash 二进制文件所在的目录，执行 `wget -O config.yaml https://stc-spadesdns.com/link/E44XnS3evMr4NXVr?clash=2&log-level=info` 下载 Clash 配置文件
-
-```
-wget -O config.yaml https://stc-spadesdns.com/link/E44XnS3evMr4NXVr?clash=2&log-level=info
-```
-
-3、启动 Clash。
-执行 ./clash -d . 即可启动 Clash，同时启动 HTTP 代理和 Socks5 代理。
-
-如提示权限不足，请执行 chmod +x clash
-
-
-3、管理 Clash。
-访问 Clash Dashboard 可以进行切换节点、测延迟等操作。
-
-Host: 127.0.0.1，端口: 9090
-
 #### Fedora软件源配置
 
 Fedora Beta

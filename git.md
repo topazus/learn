@@ -45,6 +45,18 @@ remote name is `origin`.
 #### add SSH keys
 
 ```
+ssh-keygen -t ed25519 -C "topazus@outlook.com"
+```
+
+```
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/id_ed25519
+```
+
+copy the contents of `~/.ssh/id_ed25519.pub` to the github account.
+
+
+```
 ssh-keygen -t rsa -C "Gitee_email" -f ~/.ssh/gitee_id_rsa
 ssh-keygen -t rsa -C "Github_email" -f ~/.ssh/github_id_rsa
 ```

@@ -1,8 +1,3 @@
-```
-wget https://raw.githubusercontent.com/topazus/learn/main/sources.list-debian10
-wget https://raw.githubusercontent.com/topazus/learn/main/sources.list-debian-sid
-```
-
 #### sudo
 
 ```
@@ -24,4 +19,26 @@ ruby    ALL=(ALL:ALL) ALL
 
 ```
 sudo apt install open-vm-tools open-vm-tools-desktop
+```
+
+#### Debian repos
+
+Debian Testing
+
+```
+deb https://mirrors.sjtug.sjtu.edu.cn/debian/ testing main contrib non-free
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/debian/ testing main contrib non-free
+deb https://mirrors.sjtug.sjtu.edu.cn/debian/ testing-updates main contrib non-free
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/debian/ testing-updates main contrib non-free
+deb https://mirrors.sjtug.sjtu.edu.cn/debian/ testing-backports main contrib non-free
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/debian/ testing-backports main contrib non-free
+deb https://mirrors.sjtug.sjtu.edu.cn/debian-security testing-security main contrib non-free
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/debian-security testing-security main contrib non-free
+```
+
+Debian sid
+
+```
+deb https://mirrors.sjtug.sjtu.edu.cn/debian/ sid main contrib non-free
+# deb-src https://mirrors.sjtug.sjtu.edu.cn/debian/ sid main contrib non-free
 ```
