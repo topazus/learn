@@ -11,13 +11,9 @@
 ```
 gunzip -d *.gz
 ```
-2、下载 Clash 配置文件
+2、Clash 配置文件
 
-在终端 cd 到 Clash 二进制文件所在的目录，下载 Clash 配置文件
-
-```
-wget -O config.yaml https://stc-spadesdns.com/link/E44XnS3evMr4NXVr?clash=2&log-level=info
-```
+在终端 cd 到 Clash 二进制文件所在的目录，Clash 配置文件
 
 3、启动 Clash
 
