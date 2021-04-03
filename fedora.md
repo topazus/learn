@@ -24,6 +24,35 @@ Host: 127.0.0.1，端口: 9090
 
 #### Fedora软件源配置
 
+Fedora Beta
+
+`/etc/yum.repos.d/fedora.repo`
+
+```
+[fedora]
+name=Fedora $releasever - $basearch
+failovermethod=priority
+baseurl=https://mirrors.yun-idc.com/fedora/development/$releasever/Everything/$basearch/os/
+metadata_expire=28d
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+```
+
+`/etc/yum.repos.d/fedora-modular.repo`
+
+```
+[fedora-modular]
+name=Fedora Modular $releasever - $basearch
+failovermethod=priority
+baseurl=https://mirrors.yun-idc.com/fedora/development/$releasever/Modular/$basearch/os/
+enabled=1
+metadata_expire=7d
+gpgcheck=1
+gpgkey=file:///etc/pki/rpm-gpg/RPM-GPG-KEY-fedora-$releasever-$basearch
+skip_if_unavailable=False
+```
+
 ```
 sudo sed -e 's|^metalink=|#metalink=|g' \
          -e 's|^#baseurl=http://download.example/pub/fedora/linux|baseurl=https://mirrors.bfsu.edu.cn/fedora|g' \
