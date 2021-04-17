@@ -1,3 +1,4 @@
+
 #### Fedora软件源配置
 
 Fedora Beta
@@ -39,7 +40,7 @@ sudo sed -e 's|^metalink=|#metalink=|g' \
          /etc/yum.repos.d/fedora-updates-modular.repo
 ```
 
-Fedora rawhide repositories
+Fedora rawhide软件源
 
 ```
 dnf repolist --all
@@ -96,18 +97,24 @@ skip_if_unavailable=True
 ```
 
 
-#### fcitx5 input method
+#### fcitx5 输入法
 
 ```
-sudo dnf install fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool fcitx5-chinese-addons
+sudo dnf install fcitx5 fcitx5-qt fcitx5-gtk fcitx5-configtool fcitx5-chinese-addons fcitx-autostart
 ```
+
+词库
 
 [fcitx5-pinyin-zhwiki](https://github.com/felixonmars/fcitx5-pinyin-zhwiki)
+
+[fcitx5-pinyin-moegirl](https://github.com/outloudvi/mw2fcitx)
 
 Download the latest version of zhwiki.dict file from:
 https://github.com/felixonmars/fcitx5-pinyin-zhwiki/releases
 
 Copy or move it into `~/.local/share/fcitx5/pinyin/dictionaries/` (create the folder if it does not exist)
+
+主题
 
 [Fcitx5-Material-Color](https://github.com/hosxy/Fcitx5-Material-Color)
 
@@ -145,7 +152,6 @@ manual installation
 ```
 mkdir -p ~/.local/share/fcitx5/themes/Material-Color
 git clone https://github.com/hosxy/Fcitx5-Material-Color.git ~/.local/share/fcitx5/themes/Material-Color
-git clone --depth 1 https://github.com/hosxy/Fcitx5-Material-Color.git ~/.local/share/fcitx5/themes/Material-Color
 ```
 
 手动设置配色方案

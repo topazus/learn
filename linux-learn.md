@@ -1,3 +1,5 @@
+
+
 #### clash
 
 1、下载 Clash 客户端
@@ -43,7 +45,7 @@ https://packages.microsoft.com
 
 1.vscode
 | Download type       | URL                                                                 |
-| ---                 | ---                                                                 |
+| ------------------- | ------------------------------------------------------------------- |
 | Linux 64 bit        | https://update.code.visualstudio.com/{version}/linux-x64/stable     |
 | Linux 64 bit debian | https://update.code.visualstudio.com/{version}/linux-deb-x64/stable |
 | Linux 64 bit rpm    | https://update.code.visualstudio.com/{version}/linux-rpm-x64/stable |
