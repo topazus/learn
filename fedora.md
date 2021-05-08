@@ -1,4 +1,21 @@
 
+list the files for already installed package:
+```
+rpm -ql package-name
+```
+
+list the files for RPM package:
+```
+rpm -qlp package.rpm
+```
+
+git proxy
+
+```
+git config --global http.proxy http://127.0.0.1:7890
+git config --global https.proxy https://127.0.0.1:7890
+```
+
 #### Fedora软件源配置
 
 Fedora Beta

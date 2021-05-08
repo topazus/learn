@@ -1,4 +1,24 @@
 
+#### unzip
+
+restore the compressed file to its original state and remove the .gz file.
+```
+gzip -d file.gz
+```
+
+To keep the compressed file pass the -k option to the command:
+```
+gzip -dk file.gz
+```
+
+#### find file
+
+name: case sensitive, iname: case insensitive
+
+```
+find /path/to/folder -name file-name
+find /path/to/folder -name file-name
+```
 
 #### clash
 
